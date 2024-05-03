@@ -1,0 +1,70 @@
+module.pagerduty-service.pagerduty_slack_connection.slack_link[0]: Still creating... [1m40s elapsed]
+ 2024-05-01T15:36:57.275-0500 [INFO]  provider.terraform-provider-pagerduty_v3.11.4: [INFO] Creating PagerDuty slack connection for source PWWW3WW and slack channel myChannelID
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: [DEBUG] PagerDuty - Preparing POST request to /integration-slack/workspaces/myOrgWorkspaceID/connections with body: {"slack_connection":{"source_id":"PWWW3WW","source_type":"service_reference","channel_id":"myChannelID","workspace_id”:”my”OrgID,”config":{"events":["incident.triggered","incident.acknowledged","incident.escalated","incident.resolved","incident.reassigned","incident.annotated","incident.unacknowledged","incident.delegated","incident.priority_updated","incident.responder.added","incident.responder.replied","incident.status_update_published","incident.reopened"],"priorities":null,"urgency":null},"notification_type":"responder"}}
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: [DEBUG] PagerDuty API Request Details:
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: ---[ REQUEST ]---------------------------------------
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: POST /integration-slack/workspaces/myOrgWorkspaceID/connections HTTP/1.1
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Host: app.pagerduty.com
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: User-Agent: (darwin amd64) Terraform/1.7.5
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Content-Length: 535
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Accept: application/vnd.pagerduty+json;version=2
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Authorization: Token token=**dummytokenva**
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Content-Type: application/json
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Accept-Encoding: gzip
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: {
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:  "slack_connection": {
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:   "source_id": "PWWW3WW",
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:   "source_type": "service_reference",
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:   "channel_id": "myChannelID",
+ 2024-05-01T15:36:57.275-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:   "workspace_id": "myOrgWorkspaceID",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:   "config": {
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:    "events": [
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.triggered",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.acknowledged",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.escalated",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.resolved",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.reassigned",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.annotated",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.unacknowledged",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.delegated",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.priority_updated",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.responder.added",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.responder.replied",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.status_update_published",
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:     "incident.reopened"
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:    ],
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:    "priorities": null,
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:    "urgency": null
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:   },
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:   "notification_type": "responder"
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:  }
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: }
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4
+ 2024-05-01T15:36:57.276-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: -----------------------------------------------------
+ module.pagerduty-service.pagerduty_slack_connection.slack_link[0]: Still creating... [1m50s elapsed]
+ 2024-05-01T15:36:57.559-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: [DEBUG] PagerDuty API Response Details:
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: ---[ RESPONSE ]--------------------------------------
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: HTTP/1.1 403 Forbidden
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Content-Length: 33
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Access-Control-Allow-Credentials: true
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Access-Control-Allow-Origin: *
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Access-Control-Expose-Headers:
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Cache-Control: max-age=0, private, must-revalidate
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Connection: keep-alive
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Content-Type: application/json; charset=utf-8
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Date: Wed, 01 May 2024 20:36:57 GMT
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Feature-Policy: accelerometer 'none'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; usb 'none'
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Referrer-Policy: no-referrer-when-downgrade
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: Server: nginx
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: X-Request-Id: 99f56115f3788d1ef765f1e0568839af
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: {
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:  "error": {
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:   "message": "Forbidden"
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4:  }
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: }
+ 2024-05-01T15:36:57.560-0500 [DEBUG] provider.terraform-provider-pagerduty_v3.11.4: -----------------------------------------------------
+ 2024-05-01T15:36:57.560-0500 [INFO]  provider.terraform-provider-pagerduty_v3.11.4: [INFO] v.Error POST API call to https://app.pagerduty.com/integration-slack/workspaces/myOrgWorkspaceID/connections failed 403 Forbidden. Code: 0, Errors: <nil>, Message: Forbidden
+ 2024-05-01T15:37:07.411-0500 [WARN]  provider.terraform-provider-pagerduty_v3.11.4: [WARN] WaitForState timeout after 2m0s
+ 2024-05-01T15:37:07.411-0500 [WARN]  provider.terraform-provider-pagerduty_v3.11.4: [WARN] WaitForState starting 30s refresh grace period
